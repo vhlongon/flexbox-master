@@ -38,6 +38,33 @@ a:hover {
 .slider-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  display: flex;
 }
 
+.slider-nav li {
+  flex: 2; /*flex-item -ish - nesting flexbox*/
+  /*border: 1px solid red;*/
+  text-align: center;
+  display: flex; /*flex-container -ish - nesting flexbox*/
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  /*we want to strech as well and center*/
+  display: flex;
+  align-items: center;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.arrow a {
+  font-size: 30px;
+}

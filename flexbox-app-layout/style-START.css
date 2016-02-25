@@ -56,7 +56,6 @@ a.button {
 
 
 .icon-bar a {
-  flex:1;
   text-align: center;
   padding:1.5rem;
   border-left:1px solid rgba(0,0,0,0.1);
@@ -92,7 +91,7 @@ a.button {
 
 
 /*
-  Everything So far is Cosmetic styling 
+  Everything So far is Cosmetic styling
 
   Flexbox + Important CSS Starts Here
 
@@ -102,3 +101,45 @@ a.button {
 /*
   Overall Layout
 */
+
+
+.app-wrap {
+  display:flex;
+  flex-direction:column;
+}
+
+.app-wrap > * {
+  flex:1 1 auto;
+}
+
+/*
+  Header
+*/
+
+.app-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/*
+  Content
+*/
+
+.content {
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+/*
+  Icon Bar
+*/
+
+.icon-bar {
+  display:flex;
+  flex-basis: 20%;
+}
+
+.icon-bar a {
+  flex:1;
+}
