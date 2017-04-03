@@ -45,9 +45,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box3 {
   /*flex-grow only works on one specific row*/
-  flex-grow:5;
+  /*flex-grow:5;*/
 }
 
 .box4 {
-  flex-basis:100px;
+  /*flex-basis:100px;*/
 }
